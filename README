@@ -1,0 +1,20 @@
+Geometrical corrections for tomography
+======================================
+
+Library of geometrical calibration routines for tomography.
+
+Features
+--------
+- Re-projection algorithms
+- etc.
+
+Dependencies
+------------
+- dxchange
+- numpy
+- scikit-image
+- tomopy
+
+Licence
+-------
+- BSD-3
