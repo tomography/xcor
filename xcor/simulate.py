@@ -11,32 +11,7 @@ logger = logging.getLogger(__name__)
 __author__ = "Doga Gursoy"
 __copyright__ = "Copyright (c) 2016, UChicago Argonne, LLC."
 __docformat__ = 'restructuredtext en'
-__all__ = ['project', 'tilt', 'add_jitter', 'add_noise']
-
-
-def project(obj, theta, pad=False):
-    """Calculate projection images for a given object at 
-    different angles.
-
-    Parameters
-    ----------
-    obj : ndarray
-        3D discrete object.
-    theta : ndarray
-        An array of projection angles in degrees.
-    pad : bool
-        Determines if the projection image width 
-        should be padded or not. If true, then the diagonal
-        length of the object size is used as the width of 
-        the projection image width.
-    
-    Returns
-    -------
-    ndarray
-        3D projection data.
-    """
-    import tomopy
-    return tomopy.project(obj, theta, pad)
+__all__ = ['tilt', 'add_jitter', 'add_noise']
 
 
 def tilt(obj, rad=0, phi=0):
